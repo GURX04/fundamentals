@@ -111,14 +111,17 @@
 
 #----------------EXERCISE-------------------
 
-data = [12, 15, 18, 20, 25, 30]
+# data = [12, 15, 18, 20, 25, 30]
 
-print("Dataset:", data)
-print("Number of values:", len(data))
-print("Total:", sum(data))
-print("Minimum:", min(data))
-print("Maximum:", max(data))
+# print("Dataset:", data)
+# print("Number of values:", len(data))
+# print("Total:", sum(data))
+# print("Minimum:", min(data))
+# print("Maximum:", max(data))
 
-average = sum(data) / len(data)
+# average = sum(data) / len(data)
 
-print("Average:", average)
+# print("Average:", average)
+
+
+list1 = [1,2.,3]
