@@ -244,7 +244,84 @@ neslist = [
 # for i in range(4):
 #     print(neslist[i][1])
 
-print(len(neslist))
+# print(len(neslist))
 
-ss =  ["aniket","chembur",418]
-print(neslist.count(ss))
+# ss =  ["aniket","chembur",418]
+# print(neslist.count(ss))
+
+#--------------------day 4-----------------------------
+
+# for i in range(21):
+#     print(i)
+
+# for i in range(0,21,2):
+#     print(i)
+
+# ls = []
+# l = len(ls)
+# for l in range(0,5):
+#     data = int(input("enter an integer: "))
+#     ls.append(data)
+
+# print("orginal list:",ls)
+
+# ls.sort()
+# print("sorted list: ",ls)
+
+# ls.sort(reverse = True)
+# print("reverse sorted list: ",ls)
+
+
+# data = [10, 20, 30, 40, 50, 60, 70]
+
+# print(data[0:3])
+
+# l = len(data)
+# s = l - 3
+# print(data[s:l])
+
+# print(data[0:(len(data)+1):2])
+
+# print(data[2:6])
+
+
+# students = [
+#     ["Aniket", 80],
+#     ["Rahul", 75],
+#     ["Soham", 90],
+#     ["Vedant", 85]
+# ]
+
+
+
+# for i in range(len(students)):
+#     j = 0
+#     print(f"name : {students[i][0]} marks: {students[i][1]}")
+#     j += 1
+#     avg = 0
+#     avg =  avg + students[i][1]
+
+# print("average:",avg)    
+
+
+
+# data = [10, 20, 30, 40, 50]
+
+# new = [value *2 for value in data]
+# print(new)
+
+data = [12, 45, 23, 67, 34, 89, 15, 56]
+
+new = []
+for i in data:
+    if i >= 40:
+        new.append(i)
+
+print(new)        
+
+
+mew = [value for value in data if value >=40]
+print(mew)
+
+if new== mew:
+    print("lessfkinggoo")
