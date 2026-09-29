@@ -325,3 +325,7 @@ print(mew)
 
 if new== mew:
     print("lessfkinggoo")
+
+
+#day 4 
+#start with dictionary - key value pair
