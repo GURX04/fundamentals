@@ -310,22 +310,221 @@ neslist = [
 # new = [value *2 for value in data]
 # print(new)
 
-data = [12, 45, 23, 67, 34, 89, 15, 56]
+# data = [12, 45, 23, 67, 34, 89, 15, 56]
 
-new = []
-for i in data:
-    if i >= 40:
-        new.append(i)
+# new = []
+# for i in data:
+#     if i >= 40:
+#         new.append(i)
 
-print(new)        
+# print(new)        
 
 
-mew = [value for value in data if value >=40]
-print(mew)
+# mew = [value for value in data if value >=40]
+# print(mew)
 
-if new== mew:
-    print("lessfkinggoo")
+# if new== mew:
+#     print("lessfkinggoo")
 
 
 #day 4 
 #start with dictionary - key value pair
+
+# student = {
+#     "name" : "aniket",
+#      "age" : 19,
+#      "age" : 24
+# }
+
+# print(type(student))
+# print(student)
+
+
+# student["city"] = "mumbai"
+# print(student)
+
+# student["city"]= "vashi"
+# student.pop("city")
+# print(student)
+
+# del student["age"]
+# print(student)
+
+# student["age"]= 19
+# student["city"] = "Mumbai"
+# print(student)
+
+
+# if "name" in student:
+#     print(student["name"])
+
+# print(student.keys())
+# for key in student:
+#     print(key)
+
+
+# print(len(student.keys()))
+
+# student.keys()
+# student.values()
+# print(student.items())
+
+
+#------nested dict-------
+
+# ITgang = {
+#     "aniket": {
+#         "gen": "male",
+#         "age": 19
+#     },
+
+#     "vedant": {
+#         "gen": "male",
+#         "age": 20
+#     },
+    
+#     "krrish": {
+#         "gen": "male",
+#         "age": 20
+#     },
+
+#     "ruchi": {
+#         "gen": "female",
+#         "age": 19
+#     }
+# }
+
+# print(ITgang["aniket"]["gen"])
+# print(ITgang["ruchi"]["age"])
+
+
+# gng = [
+#     {
+#         "name" : "aniket",
+#         "age" : 19
+#     },
+
+#     {
+#         "name":"vedant",
+#         "age":20
+#     }
+# ]
+
+# print(gng[0]["age"])
+
+# for i in range(len(gng)):
+#     print(gng[i]["age"])
+
+
+student = {
+    "name": "Aniket",
+    "age": 20,
+    "cgpa": 7.1
+}
+
+print(student["cgpa"])
+
+student["age"] = 21
+student["cgpa"] = 7.8
+
+student["city"] = "mumbai"
+student["branch"] = "it"
+
+print(student)
+
+student.pop("city")
+del student["branch"]
+
+print(student)
+
+
+if "cgpa" in student:
+    print("cgpa exists")
+
+# students = {
+#     "name": "Aniket",
+#     "age": 20,
+#     "cgpa": 7.1
+# }    
+
+
+# for key,value in students.items():
+#     print(key, " : ",value )
+
+# students = [
+#     {"name": "Aniket", "marks": 85},
+#     {"name": "Rahul", "marks": 72},
+#     {"name": "Soham", "marks": 91},
+#     {"name": "Vedant", "marks": 68}
+# ]
+
+# for i in range(len(students)):
+#     if students[i]["marks"] > 80:
+#         print(students[i]["name"]) 
+
+#average
+# sum = 0
+# for student in students:
+#     sum = sum + student["marks"]
+
+# print(sum/len(students))
+
+
+# get highest marks
+
+# high = []
+# for student in students:
+#     high.append(student["marks"])
+
+# print(max(high))
+
+
+
+# data = [
+#     {"age": 20, "salary": 25000},
+#     {"age": 22, "salary": 32000},
+#     {"age": 19, "salary": 18000},
+#     {"age": 25, "salary": 45000},
+#     {"age": 21, "salary": 28000}
+# ]
+
+# for value in data:
+#     if value["salary"] > 25000:
+#         print(value["salary"])
+
+# total = []
+# for value in data:
+#     total.append(value["salary"])
+
+# print(sum(total))
+# print(sum(total)/(len(data)))
+# print(max(total))
+# print(min(total))
+
+
+
+
+students = [
+    {"name": "Aniket", "marks": 85},
+    {"name": "Rahul", "marks": 72},
+    {"name": "Soham", "marks": 91},
+    {"name": "Vedant", "marks": 68},
+    {"name": "Adarsh", "marks": 78}
+]
+
+nlist = []
+for value in students:
+    nlist.append(value["marks"])
+
+avg = sum(nlist) / len(nlist)
+highest = max(nlist)
+lowest = min(nlist)
+
+for value in students:
+    if value["marks"] > 70:
+        print(value["name"])
+
+    if value["marks"] > avg:
+        print(value["name"])
+
+
