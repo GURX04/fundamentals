@@ -123,7 +123,7 @@
 
 # print("Average:", average)
 
-list1 = [1,2.,3]
+# list1 = [1,2.,3]
 
 
 #------------------ Day 3 --------------------
@@ -231,12 +231,12 @@ list1 = [1,2.,3]
 
 #------------nested list-------
 
-neslist = [
-    ["aniket","chembur",418],
-    ["vedant","cotton green",533],
-    ["ruchi","borivali",710],
-    ["krrish","andheri",684],
-]
+# neslist = [
+#     ["aniket","chembur",418],
+#     ["vedant","cotton green",533],
+#     ["ruchi","borivali",710],
+#     ["krrish","andheri",684],
+# ]
 
 # print(neslist)
 # print(neslist[1][2])
@@ -400,7 +400,7 @@ neslist = [
 
 # gng = [
 #     {
-#         "name" : "aniket",
+#         "name" : "aniket",- 
 #         "age" : 19
 #     },
 
@@ -415,31 +415,31 @@ neslist = [
 # for i in range(len(gng)):
 #     print(gng[i]["age"])
 
+#---------------practice  ------------
+# student = {
+#     "name": "Aniket",
+#     "age": 20,
+#     "cgpa": 7.1
+# }
 
-student = {
-    "name": "Aniket",
-    "age": 20,
-    "cgpa": 7.1
-}
+# print(student["cgpa"])
 
-print(student["cgpa"])
+# student["age"] = 21
+# student["cgpa"] = 7.8
 
-student["age"] = 21
-student["cgpa"] = 7.8
+# student["city"] = "mumbai"
+# student["branch"] = "it"
 
-student["city"] = "mumbai"
-student["branch"] = "it"
+# print(student)
 
-print(student)
+# student.pop("city")
+# del student["branch"]
 
-student.pop("city")
-del student["branch"]
-
-print(student)
+# print(student)
 
 
-if "cgpa" in student:
-    print("cgpa exists")
+# if "cgpa" in student:
+#     print("cgpa exists")
 
 # students = {
 #     "name": "Aniket",
@@ -504,27 +504,88 @@ if "cgpa" in student:
 
 
 
-students = [
-    {"name": "Aniket", "marks": 85},
-    {"name": "Rahul", "marks": 72},
-    {"name": "Soham", "marks": 91},
-    {"name": "Vedant", "marks": 68},
-    {"name": "Adarsh", "marks": 78}
-]
+# students = [
+#     {"name": "Aniket", "marks": 85},
+#     {"name": "Rahul", "marks": 72},
+#     {"name": "Soham", "marks": 91},
+#     {"name": "Vedant", "marks": 68},
+#     {"name": "Adarsh", "marks": 78}
+# ]
 
-nlist = []
-for value in students:
-    nlist.append(value["marks"])
+# nlist = []
+# for value in students:
+#     nlist.append(value["marks"])
 
-avg = sum(nlist) / len(nlist)
-highest = max(nlist)
-lowest = min(nlist)
+# avg = sum(nlist) / len(nlist)
+# highest = max(nlist)
+# lowest = min(nlist)
 
-for value in students:
-    if value["marks"] > 70:
-        print(value["name"])
+# for value in students:
+#     if value["marks"] > 70:
+#         print(value["name"])
 
-    if value["marks"] > avg:
-        print(value["name"])
+#     if value["marks"] > avg:
+#         print(value["name"])
 
 
+
+
+ #--------------------tuple-------------------
+
+# tup = ('aniket',19,"aplha-male",True,7.146)
+# print(tup)
+
+
+# tt = tuple("aniket")
+# print(tt)
+
+# name, age ,gender,gay,gpa = tup
+# print(name)
+# print(gender)
+
+
+#-----practice tuple ---------
+
+# data = (10,20,30,40,50)
+# print(data[2])
+
+# data = (10, 20, 30, 20, 40, 20)
+# print(data.count(20))
+
+# data = (5, 10, 15, 20, 25)
+# for value in data:
+#     print(value)
+
+
+# student = ("Aniket", 20, 7.1)    
+
+# name, age ,cgpa = student
+
+# print(name)
+# print(age)
+# print(cgpa)
+
+
+
+# coordinates = (
+#     (10, 20),
+#     (30, 40),
+#     (50, 60)
+# )
+
+
+# for value in coordinates:
+#     print(value[0],value[1])
+
+
+# students = (
+#     ("Aniket", 85),
+#     ("Rahul", 72),
+#     ("Soham", 91),
+#     ("Vedant", 68)
+# )
+
+
+# for i in students:
+#     if i[1] > 80:
+#         print(i[0])
