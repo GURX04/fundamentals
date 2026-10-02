@@ -589,3 +589,173 @@
 # for i in students:
 #     if i[1] > 80:
 #         print(i[0])
+
+
+#------------------------ day 6 ------------------
+
+# sets 
+
+# set1 = {"aniket", 19}
+
+# print (set1)
+
+# data = {10, 20, 30, 20, 10, 40}
+# print(data)
+
+# set2 = {10,20,30}
+# set2.add(40)
+# print(set2)
+
+
+# set2.remove(20)
+# print(set2)
+
+
+
+
+# data = [1, 2, 2, 3, 4, 4, 5, 5]
+
+# data = set(data)
+# # print(data)
+
+
+# numbers = {10, 20, 30, 40}
+
+# if 50 in numbers:
+#     print("yes")
+
+# else:
+#     print("not present")
+
+
+# a = {1, 2, 3}
+# b = {3, 4, 5}
+
+# c = a.union(b)
+# c = a | b
+# print(c)
+
+# d = a.intersection(b)
+# d = a & b
+# print(d)
+
+# students_a = {"Aniket", "Rahul", "Soham", "Adarsh"}
+# students_b = {"Soham", "Vedant", "Aniket", "Rohit"}
+
+
+# a = students_a | students_b
+# b = students_a & students_b
+# print(b)
+
+
+
+# data = [10, 20, 20, 30, 40, 40, 50, 50, 50]
+
+# data = set(data)
+
+# print(len(data))
+
+
+
+# functions
+# def aniket():
+#     print("aniket says hi")
+
+# aniket()
+
+# def greet(name):
+#     print("hi hello welcome", name )
+
+# greet("ani")
+# greet("sunny")
+
+
+
+#---- practice-functiions ----
+
+
+# def hello():
+#     print("hello python")
+
+
+# def add(a,b):
+#     return a + b 
+    
+# result = add(15, 25)
+# print(result)
+
+# def square(number):
+#     return number*2
+
+# print(square(5))
+
+# def isoddiseven(n):
+#     if n %2 ==0:
+#         print(n,"is even")
+#     else:
+#         print(n,"is odd")
+
+# isoddiseven(77)
+# isoddiseven(40)        
+
+
+
+# marks = [80, 70, 90, 60, 100]
+
+# def calavg(data):
+#     print(sum(data)/len(data))
+
+# calavg(marks)
+
+
+
+# marks = [35, 70, 45, 20, 90, 33, 80]
+
+# def getpassedstudents(data):
+#     passed = []
+
+#     for number in marks:
+#         if number>= 40:
+#             passed.append(number)
+
+#     print(passed)       
+
+# getpassedstudents(marks)    
+
+# student = {
+#     "name": "Aniket",
+#     "marks": 85
+# }
+
+# def checkstudent(data):
+#     if student["marks"] >= 40:
+#         print(student["name"],"passed")
+
+
+# checkstudent(student)
+
+
+
+data = [10, 20, 30, 40, 50]
+
+def anal(data):
+    total = sum(data)
+    high = max(data)
+    low = min(data)
+    avg = total/len(data)
+
+    print(f"total: {total},highest: {high},lowest: {low},avg: {avg} ")
+
+
+anal(data)
+
+
+def normalze(data):
+    normal = []
+    for number in data:
+        ss = (number - min(data)) / (max(data) - min(data))
+        normal.append(ss)
+
+    print(normal) 
+
+normalze(data)
