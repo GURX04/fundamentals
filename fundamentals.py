@@ -736,26 +736,26 @@
 
 
 
-data = [10, 20, 30, 40, 50]
+# data = [10, 20, 30, 40, 50]
 
-def anal(data):
-    total = sum(data)
-    high = max(data)
-    low = min(data)
-    avg = total/len(data)
+# def anal(data):
+#     total = sum(data)
+#     high = max(data)
+#     low = min(data)
+#     avg = total/len(data)
 
-    print(f"total: {total},highest: {high},lowest: {low},avg: {avg} ")
-
-
-anal(data)
+#     print(f"total: {total},highest: {high},lowest: {low},avg: {avg} ")
 
 
-def normalze(data):
-    normal = []
-    for number in data:
-        ss = (number - min(data)) / (max(data) - min(data))
-        normal.append(ss)
+# anal(data)
 
-    print(normal) 
 
-normalze(data)
+# def normalze(data):
+#     normal = []
+#     for number in data:
+#         ss = (number - min(data)) / (max(data) - min(data))
+#         normal.append(ss)
+
+#     print(normal) 
+
+# normalze(data)
